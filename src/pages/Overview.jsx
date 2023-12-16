@@ -1,12 +1,18 @@
-import React from 'react'
+import React from "react";
+import Goals from "./Goals";
+import Accounts from "../components/Accounts";
 
 const Overview = () => {
   return (
-    <div className='w-full h-screen w-max-[1200px]'>
-      <h1>You go, goal-getter!</h1>
-      <button></button>
+    <div className="flex w-full overflow-hidden p-6">
+      <div className="w-[25%]">
+        <Accounts />
+      </div>
+      <div className="w-[75%]">
+        <Goals />
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Overview
+export default Overview;

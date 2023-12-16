@@ -5,7 +5,11 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   const [navMobile, setNavMobile] = useState(false);
   return (
-    <div className="shadow-black-500 right-0 flex w-full justify-between bg-[#008080] p-4 text-gray-300 shadow-lg">
+    <div 
+    className="shadow-black-500 right-0 flex w-full justify-between bg-[#151729] p-4 text-gray-300 shadow-lg"
+    //  style={{background: 'linear-gradient(to bottom, #2e2f42, #004040)'}}
+
+    >
       <ul className="right-0 top-0 hidden w-[70%] justify-between md:flex ">
         <li>
           <Link to="/">Overview</Link>

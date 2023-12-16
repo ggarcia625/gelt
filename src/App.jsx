@@ -13,9 +13,11 @@ import CreditScore from "./pages/CreditScore";
 
 const App = () => {
   return (
-    <div className="h-screen w-full bg-[#008080]">
+    <div className="h-screen w-full bg-[#151729] justify-center"
+    // style={{background: 'radial-gradient(circle, #2e2f42, #004040)'}}
+    >
       <BrowserRouter>
-        <Navbar />
+        <Navbar/>
         <Routes>
           <Route path='/' exact Component={Overview} />
           <Route path='/transactions' exact Component={Transactions} />
