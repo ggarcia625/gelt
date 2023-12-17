@@ -10,23 +10,20 @@ import Trends from "./pages/Trends";
 import Investments from "./pages/Investments";
 import CreditScore from "./pages/CreditScore";
 
-
 const App = () => {
   return (
-    <div className="h-screen w-full bg-[#151729] justify-center"
-    // style={{background: 'radial-gradient(circle, #2e2f42, #004040)'}}
-    >
+    <div className="h-screen w-full bg-[#151729] justify-center">
       <BrowserRouter>
-        <Navbar/>
+        <Navbar />
         <Routes>
-          <Route path='/gelt' exact Component={Overview} />
-          <Route path='/transactions' exact Component={Transactions} />
-          <Route path='/credit-score' exact Component={CreditScore} />
-          <Route path='/bills' exact Component={Bills} />
-          <Route path='/budgets' exact Component={Budget} />
-          <Route path='/goals' exact Component={Goals} />
-          <Route path='/trends' exact Component={Trends} />
-          <Route path='/investments' exact Component={Investments} />
+          <Route path="/" element={<Overview />} />
+          <Route path="/transactions" element={<Transactions />} />
+          <Route path="/credit-score" element={<CreditScore />} />
+          <Route path="/bills" element={<Bills />} />
+          <Route path="/budgets" element={<Budget />} />
+          <Route path="/goals" element={<Goals />} />
+          <Route path="/trends" element={<Trends />} />
+          <Route path="/investments" element={<Investments />} />
         </Routes>
       </BrowserRouter>
     </div>
