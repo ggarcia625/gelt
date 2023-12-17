@@ -14,13 +14,13 @@ const Navbar = () => {
           <Link to="/">Overview</Link>
         </li>
         <li>
-          <Link to="/transactions"> Transcations</Link>
+          <Link to="/gelt/transactions"> Transcations</Link>
         </li>
         <li>
-          <Link to="/credit-score">Credit Score</Link>
+          <Link to="/gelt/credit-score">Credit Score</Link>
         </li>
         <li>
-          <Link to="/bills">Bills</Link>
+          <Link to="/gelt/bills">Bills</Link>
         </li>
         <li>
           <Link to="/budgets">Budgets</Link>
