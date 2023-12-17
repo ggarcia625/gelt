@@ -19,7 +19,7 @@ const App = () => {
       <BrowserRouter>
         <Navbar/>
         <Routes>
-          <Route path='/' exact Component={Overview} />
+          <Route path='/gelt' exact Component={Overview} />
           <Route path='/transactions' exact Component={Transactions} />
           <Route path='/credit-score' exact Component={CreditScore} />
           <Route path='/bills' exact Component={Bills} />
