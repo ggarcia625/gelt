@@ -4,12 +4,11 @@ import { FaCirclePlus } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 const Navbar = () => {
   const [navMobile, setNavMobile] = useState(false);
+  const handleMobile = () => {
+    setNavMobile(!navMobile);
+  };
   return (
-    <div 
-    className="shadow-black-500 right-0 flex w-full justify-between bg-[#151729] p-4 text-gray-300 shadow-lg"
-    //  style={{background: 'linear-gradient(to bottom, #2e2f42, #004040)'}}
-
-    >
+    <div className="shadow-black-500 right-0 flex w-full justify-between bg-[#0b0c14] p-4 text-gray-300 shadow-lg">
       <ul className="right-0 top-0 hidden w-[70%] justify-between md:flex ">
         <li>
           <Link to="/">Overview</Link>
@@ -36,38 +35,38 @@ const Navbar = () => {
           <Link to="/investments">Investments</Link>
         </li>
       </ul>
-      <div
-        onClick={() => setNavMobile(!navMobile)}
-        className="z-10 cursor-pointer md:hidden"
-      >
+      <div onClick={handleMobile} className="z-10 cursor-pointer md:hidden">
         {navMobile ? <FaTimes /> : <FaBars />}
       </div>
       <ul
         className={
           navMobile
-            ? "absolute left-0 top-0 flex h-screen w-full flex-col items-center justify-center bg-[#008080] text-4xl"
+            ? "absolute left-0 top-0 flex h-screen w-full flex-col items-center justify-center bg-[#0b0c14] text-4xl"
             : "hidden"
         }
       >
-        <li className="py-6">
+        <li className="py-6" onClick={handleMobile}>
           <Link to="/">Overview</Link>
         </li>
-        <li className="py-6">
+        <li className="py-6" onClick={handleMobile}>
           <Link to="/transactions"> Transcations</Link>
         </li>
-        <li className="py-6">
+        <li className="py-6" onClick={handleMobile}>
           <Link to="/credit-score">Credit Score</Link>
         </li>
-        <li className="py-6">
+        <li className="py-6" onClick={handleMobile}>
           <Link to="/bills">Bills</Link>
         </li>
-        <li className="py-6">
+        <li className="py-6" onClick={handleMobile}>
           <Link to="/budgets">Budgets</Link>
         </li>
-        <li className="py-6">
+        <li className="py-6" onClick={handleMobile}>
+          <Link to="/goals">Goals</Link>
+        </li>
+        <li className="py-6" onClick={handleMobile}>
           <Link to="/trends">Trends</Link>
         </li>
-        <li className="py-6">
+        <li className="py-6" onClick={handleMobile}>
           <Link to="/investments">Investments</Link>
         </li>
       </ul>

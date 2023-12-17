@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 const ProgressBar = ({ initialProgress }) => {
   const [progress, setProgress] = useState(0);
@@ -14,17 +14,20 @@ const ProgressBar = ({ initialProgress }) => {
   };
 
   return (
-    <div className="progress-bar-container bg-gray-200 rounded-2xl p-[1px]">
-      <div
-        className="progress-bar bg-[#008080] text-white text-center rounded-2xl"
-        style={{
-          width: `${progress}%`,
-          transition: 'width 1s ease-in-out', // CSS transition property
-        }}
-      >
-        {progress}%
+    <>
+      <div className="progress-bar-container rounded-2xl bg-gray-200 p-[1px]">
+        <div
+          className="progress-bar rounded-2xl bg-[#008080] text-center text-white h-6"
+          style={{
+            width: `${progress}%`,
+            transition: "width 1s ease-in-out", // CSS transition property
+          }}
+        >
+          {' '}
+        </div>
       </div>
-    </div>
+      <span className="flex justify-center">{progress}%</span>
+    </>
   );
 };
 

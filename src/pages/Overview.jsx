@@ -4,7 +4,7 @@ import Accounts from "../components/Accounts";
 
 const Overview = () => {
   return (
-    <div className="flex w-full overflow-hidden p-6">
+    <div className="flex h-screen bg-[#151729] w-full overflow-hidden p-6">
       <div className="w-[25%]">
         <Accounts />
       </div>

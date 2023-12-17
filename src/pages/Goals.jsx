@@ -34,7 +34,7 @@ const Goals = () => {
           <h1>You go, goal-getter!</h1>
           <button
             onClick={() => addGoal(/* New goal object */)}
-            className="rounded-3xl border-1 bg-[#008080] p-2"
+            className="rounded-3xl border-1 bg-[#008080] p-3"
           >
             + Create New Goal
           </button>
