@@ -13,6 +13,7 @@ import CreditScore from "./pages/CreditScore";
 const App = () => {
   return (
     <div className="h-screen w-full justify-center bg-[#151729]">
+      THIS IS UPDATEING
       <BrowserRouter className='/gelt/'>
         <Navbar />
         <Routes>
@@ -26,6 +27,8 @@ const App = () => {
           <Route path="/investments" element={<Investments />} />
         </Routes>
       </BrowserRouter>
+      THIS IS UPDATEING
+
     </div>
   );
 };
