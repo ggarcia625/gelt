@@ -11,28 +11,28 @@ const Navbar = () => {
     <div className="shadow-black-500 right-0 flex w-full justify-between bg-[#0b0c14] p-4 text-gray-300 shadow-lg">
       <ul className="right-0 top-0 hidden w-[70%] justify-between md:flex ">
         <li>
-          <Link to="/">Overview</Link>
+          <Link to="/gelt/">Overview</Link>
         </li>
         <li>
-          <Link to="/transactions"> Transcations</Link>
+          <Link to="/gelt/transactions"> Transcations</Link>
         </li>
         <li>
-          <Link to="/credit-score">Credit Score</Link>
+          <Link to="/gelt/credit-score">Credit Score</Link>
         </li>
         <li>
-          <Link to="/bills">Bills</Link>
+          <Link to="/gelt/bills">Bills</Link>
         </li>
         <li>
-          <Link to="/budgets">Budgets</Link>
+          <Link to="/gelt/budgets">Budgets</Link>
         </li>
         <li>
-          <Link to="/goals">Goals</Link>
+          <Link to="/gelt/goals">Goals</Link>
         </li>
         <li>
-          <Link to="/trends">Trends</Link>
+          <Link to="/gelt/trends">Trends</Link>
         </li>
         <li>
-          <Link to="/investments">Investments</Link>
+          <Link to="/gelt/investments">Investments</Link>
         </li>
       </ul>
       <div onClick={handleMobile} className="z-10 cursor-pointer md:hidden">

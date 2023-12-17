@@ -18,12 +18,12 @@ const App = () => {
         <Routes>
           <Route path="/gelt" element={<Overview />} />
           <Route path="/gelt/transactions" element={<Transactions />} />
-          <Route path="/credit-score" element={<CreditScore />} />
-          <Route path="/bills" element={<Bills />} />
-          <Route path="/budgets" element={<Budget />} />
-          <Route path="/goals" element={<Goals />} />
-          <Route path="/trends" element={<Trends />} />
-          <Route path="/investments" element={<Investments />} />
+          <Route path="/gelt/credit-score" element={<CreditScore />} />
+          <Route path="/gelt/bills" element={<Bills />} />
+          <Route path="/gelt/budgets" element={<Budget />} />
+          <Route path="/gelt/goals" element={<Goals />} />
+          <Route path="/gelt/trends" element={<Trends />} />
+          <Route path="/gelt/investments" element={<Investments />} />
         </Routes>
       </BrowserRouter>
     </div>
