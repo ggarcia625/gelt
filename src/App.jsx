@@ -12,8 +12,8 @@ import CreditScore from "./pages/CreditScore";
 
 const App = () => {
   return (
-    <div className="h-screen w-full bg-[#151729] justify-center">
-      <BrowserRouter>
+    <div className="h-screen w-full justify-center bg-[#151729]">
+      <BrowserRouter basename="gelt">
         <Navbar />
         <Routes>
           <Route path="/gelt" element={<Overview />} />
