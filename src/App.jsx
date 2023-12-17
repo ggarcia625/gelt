@@ -14,15 +14,15 @@ const App = () => {
   return (
     <div className="h-screen w-full justify-center bg-[#151729]">
       THIS IS UPDATEING
-      <BrowserRouter className='/gelt/'>
+      <BrowserRouter basename='/gelt/'>
         <Navbar />
         <Routes>
           <Route path="/gelt/" element={<Overview />} />
-          <Route path="gelt/transactions" element={<Transactions />} />
-          <Route path="/gelt/credit-score" element={<CreditScore />} />
+          <Route path="/transactions" element={<Transactions />} />
+          <Route path="/credit-score" element={<CreditScore />} />
           <Route path="/bills" element={<Bills />} />
           <Route path="/budgets" element={<Budget />} />
-          <Route path="/gelt/goals" element={<Goals />} />
+          <Route path="/goals" element={<Goals />} />
           <Route path="/trends" element={<Trends />} />
           <Route path="/investments" element={<Investments />} />
         </Routes>
