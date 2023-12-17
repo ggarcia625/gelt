@@ -16,8 +16,8 @@ const App = () => {
       <BrowserRouter className='/gelt/'>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Overview />} />
-          <Route path="/transactions" element={<Transactions />} />
+          <Route path="/gelt" element={<Overview />} />
+          <Route path="gelt/transactions" element={<Transactions />} />
           <Route path="/credit-score" element={<CreditScore />} />
           <Route path="/bills" element={<Bills />} />
           <Route path="/budgets" element={<Budget />} />
