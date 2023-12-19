@@ -14,25 +14,25 @@ const Navbar = () => {
           <Link to="/gelt">Overview</Link>
         </li>
         <li>
-          <Link to="/transactions"> Transcations</Link>
+          <Link to="/gelt/transactions"> Transcations</Link>
         </li>
         <li>
-          <Link to="/credit-score">Credit Score</Link>
+          <Link to="/gelt/credit-score">Credit Score</Link>
         </li>
         <li>
           <Link to="/gelt/bills">Bills</Link>
         </li>
         <li>
-          <Link to="/budgets">Budgets</Link>
+          <Link to="/gelt/budgets">Budgets</Link>
         </li>
         <li>
           <Link to="gelt/goals">Goals</Link>
         </li>
         <li>
-          <Link to="/trends">Trends</Link>
+          <Link to="/gelt/trends">Trends</Link>
         </li>
         <li>
-          <Link to="/investments">Investments</Link>
+          <Link to="/gelt/investments">Investments</Link>
         </li>
       </ul>
       <div onClick={handleMobile} className="z-10 cursor-pointer md:hidden">
@@ -49,25 +49,25 @@ const Navbar = () => {
           <Link to="/gelt">Overview</Link>
         </li>
         <li className="py-6" onClick={handleMobile}>
-          <Link to="/transactions"> Transcations</Link>
+          <Link to="/gelt/transactions"> Transcations</Link>
         </li>
         <li className="py-6" onClick={handleMobile}>
-          <Link to="/credit-score">Credit Score</Link>
+          <Link to="/gelt/credit-score">Credit Score</Link>
         </li>
         <li className="py-6" onClick={handleMobile}>
-          <Link to="/bills">Bills</Link>
+          <Link to="/gelt/bills">Bills</Link>
         </li>
         <li className="py-6" onClick={handleMobile}>
-          <Link to="/budgets">Budgets</Link>
+          <Link to="/gelt/budgets">Budgets</Link>
         </li>
         <li className="py-6" onClick={handleMobile}>
-          <Link to="/goals">Goals</Link>
+          <Link to="/gelt/goals">Goals</Link>
         </li>
         <li className="py-6" onClick={handleMobile}>
-          <Link to="/trends">Trends</Link>
+          <Link to="/gelt/trends">Trends</Link>
         </li>
         <li className="py-6" onClick={handleMobile}>
-          <Link to="/investments">Investments</Link>
+          <Link to="/gelt/investments">Investments</Link>
         </li>
       </ul>
       <ul className="mr-4 flex w-[100px] justify-between">
