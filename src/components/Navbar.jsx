@@ -11,7 +11,7 @@ const Navbar = () => {
     <div className="shadow-black-500 right-0 flex w-full justify-between bg-[#0b0c14] p-4 text-gray-300 shadow-lg">
       <ul className="right-0 top-0 hidden w-[70%] justify-between md:flex ">
         <li>
-          <Link to="/">Overview</Link>
+          <Link to="/gelt">Overview</Link>
         </li>
         <li>
           <Link to="/transactions"> Transcations</Link>
