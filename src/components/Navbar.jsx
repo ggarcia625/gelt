@@ -46,7 +46,7 @@ const Navbar = () => {
         }
       >
         <li className="py-6" onClick={handleMobile}>
-          <Link to="/">Overview</Link>
+          <Link to="/gelt">Overview</Link>
         </li>
         <li className="py-6" onClick={handleMobile}>
           <Link to="/transactions"> Transcations</Link>
